@@ -1,0 +1,89 @@
+.grid-container {
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    background: lightgray;
+    display: grid;
+    grid-template-columns: 2fr 2fr 4fr 2fr 2fr;
+    grid-template-rows: 3fr 2fr 2fr;
+    grid-gap: 0.5rem;
+    align-items: center;
+    position: relative;
+
+    .grid-item {
+        background: $background-color;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        display: inline;
+        color: $gold-color;
+
+        h1, h2 {
+            @include vertical-align;
+        }
+
+    }
+
+    .front-logo {
+        align-self: center;
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            overflow: hidden;
+        }
+    }
+
+    .front-alex-image {
+        text-align: center;
+        grid-column: 3 / 4;
+        grid-row: 4 / 2;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            overflow: hidden;
+        }
+    }
+
+    .front-professional {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .front-professional-skills {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .front-professional-projects {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .front-professional-experience {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    .front-professional-education {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+
+    .front-personal {
+        grid-column: 4 / 6;
+        grid-row: 1 / 2;
+    }
+
+    .front-personal-volunteer {}
+
+    .front-personal-interests {}
+
+    .front-personal-about {}
+
+    .front-personal-contact {}
+}

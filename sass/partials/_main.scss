@@ -12,3 +12,13 @@
 html {
     scroll-behavior: smooth;
 }
+body{
+    max-width: $body_max_width;
+    margin: 0 auto;
+}
+h1{
+    font-size: $h1-font-size;
+}
+h2{
+    font-size: $h2-font-size;
+}
