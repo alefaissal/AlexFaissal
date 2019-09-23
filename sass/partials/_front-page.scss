@@ -21,6 +21,9 @@
         h1, h2 {
             @include vertical-align;
         }
+        &:hover{
+            transform: scale(0.95);
+          }
 
     }
 
@@ -40,6 +43,9 @@
         text-align: center;
         grid-column: 3 / 4;
         grid-row: 4 / 2;
+        &:hover{
+            transform: scale(1);
+          }
 
         img {
             width: 100%;
