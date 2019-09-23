@@ -1,0 +1,19 @@
+@mixin tablet {
+    @media (min-width: $tablet-width) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: $desktop-width) {
+        @content;
+    }
+}
+
+// @mixin text-news($background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%),
+//     $size: cover,
+//     $text-align: left) {
+//     background: $background;
+//     background-size: $size;
+//     text-align: $text-align;
+// }
