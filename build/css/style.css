@@ -157,6 +157,9 @@ table {
         align-self: center;
     grid-column: 3 / 4;
     grid-row: 1 / 2; }
+    .grid-container .front-logo:hover {
+      -webkit-transform: scale(1);
+              transform: scale(1); }
     .grid-container .front-logo img {
       width: 100%;
       height: 100%;
