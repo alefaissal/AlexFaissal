@@ -1,98 +1,151 @@
-.grid-container {
-    text-align: center;
+.front-page{
     height: 100vh;
-    width: 100%;
-    background: lightgray;
-    display: grid;
-    grid-template-columns: 2fr 2fr 4fr 2fr 2fr;
-    grid-template-rows: 3fr 2fr 2fr;
-    grid-gap: 0.5rem;
-    align-items: center;
-    position: relative;
-
-    .grid-item {
-        background: $background-color;
-        height: 100%;
-        width: 100%;
-        align-items: center;
-        display: inline;
-        color: $gold-color;
-
-        h1, h2 {
-            @include vertical-align;
+    background:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(../../images/beach.jpeg) no-repeat center;
+    background-size: cover, cover;
+    .icons-banner{
+        display: flex;
+        // background: black;
+        justify-content: space-around;
+        // @include vertical-align;
+        height: 80vh;
+        padding-top:10%;
+        img{
+            height: 20vh;
+            border-radius: 50%;
         }
-        &:hover{
-            transform: scale(0.95);
-          }
-
-    }
-
-    .front-logo {
-        align-self: center;
-        grid-column: 3 / 4;
-        grid-row: 1 / 2;
-        &:hover{
-            transform: scale(1);
-          }
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            overflow: hidden;
+        h2{
+            color: white;
+            text-align: center;
         }
-    }
-
-    .front-alex-image {
-        text-align: center;
-        grid-column: 3 / 4;
-        grid-row: 4 / 2;
-        &:hover{
-            transform: scale(1);
-          }
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            overflow: hidden;
+        .icon-me-thinking{
+            align-self: flex-start;
         }
+        .icon-me-bone{
+            align-self: center;
+        }
+        .icon-me-hand{
+            align-self: flex-end
+        }
+
     }
-
-    .front-professional {
-        grid-column: 1 / 3;
-        grid-row: 1 / 2;
-    }
-
-    .front-professional-skills {
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
-    }
-
-    .front-professional-projects {
-        grid-column: 2 / 3;
-        grid-row: 2 / 3;
-    }
-
-    .front-professional-experience {
-        grid-column: 1 / 2;
-        grid-row: 3 / 4;
-    }
-
-    .front-professional-education {
-        grid-column: 2 / 3;
-        grid-row: 3 / 4;
-    }
-
-    .front-personal {
-        grid-column: 4 / 6;
-        grid-row: 1 / 2;
-    }
-
-    .front-personal-volunteer {}
-
-    .front-personal-interests {}
-
-    .front-personal-about {}
-
-    .front-personal-contact {}
 }
+// .grid-container {
+//     text-align: center;
+//     height: 100vh;
+//     width: 100%;
+//     // background: lightgray;
+//     display: grid;
+//     grid-template-columns: 2fr 2fr 4fr 2fr 2fr;
+//     grid-template-rows: 1fr 2fr 2fr;
+//     grid-gap: 0.5rem;
+//     align-items: center;
+//     position: relative;
+
+//     .grid-item {
+//         background: white;
+//         height: 100%;
+//         width: 100%;
+//         align-items: center;
+//         display: inline;
+//         color: black;
+
+//         h1, h2 {
+//             // @include vertical-align;
+//         }
+//         &:hover{
+//             // transform: scale(0.95);
+//             background: black;
+//             color: $gold-color;
+//           }
+
+//     }
+
+//     .front-logo {
+//         align-self: center;
+//         grid-column: 3 / 4;
+//         grid-row: 1 / 2;
+//         background: black;
+//         &:hover{
+//             transform: scale(1);
+//           }
+//         img {
+//             width: 100%;
+//             height: 100%;
+//             object-fit: contain;
+//             overflow: hidden;
+//         }
+//     }
+
+//     .front-alex-image {
+//         text-align: center;
+//         grid-column: 3 / 4;
+//         grid-row: 4 / 2;
+//         &:hover{
+//             background: white;
+//           }
+
+//         img {
+//             width: 100%;
+//             height: 80%;
+//             object-fit: cover;
+//             overflow: hidden;
+//         }
+//     }
+
+//     .front-professional {
+//         grid-column: 1 / 3;
+//         grid-row: 1 / 2;
+//         background: black;
+//         color: black;
+//         &:hover{
+//             transform: scale(1);
+//             color: $gold-color;
+//           }
+//     }
+
+//     .front-professional-skills {
+//         grid-column: 1 / 2;
+//         grid-row: 2 / 3;
+//     }
+
+//     .front-professional-projects {
+//         grid-column: 2 / 3;
+//         grid-row: 2 / 3;
+//     }
+
+//     .front-professional-experience {
+//         grid-column: 1 / 2;
+//         grid-row: 3 / 4;
+//     }
+
+//     .front-professional-education {
+//         grid-column: 2 / 3;
+//         grid-row: 3 / 4;
+//     }
+
+//     .front-personal {
+//         grid-column: 4 / 6;
+//         grid-row: 1 / 2;
+//         background: black;
+//         color: black;
+//         &:hover{
+//             transform: scale(1);
+//             color: $gold-color;
+//           }
+//     }
+
+//     .front-personal-volunteer {
+//         p{
+//             color: white;
+//             font-size: 24px;
+//         }
+//     }
+
+//     .front-personal-interests {}
+
+//     .front-personal-about {}
+
+//     .front-personal-contact {}
+// }

@@ -122,81 +122,82 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.grid-container {
-  text-align: center;
+.front-page {
   height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../images/beach.jpeg) no-repeat center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(../../images/beach.jpeg) no-repeat center;
+  background-size: cover, cover; }
+  .front-page .icons-banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 80vh;
+    padding-top: 10%; }
+    .front-page .icons-banner img {
+      height: 20vh;
+      border-radius: 50%; }
+    .front-page .icons-banner h2 {
+      color: white;
+      text-align: center; }
+    .front-page .icons-banner .icon-me-thinking {
+      -ms-flex-item-align: start;
+          align-self: flex-start; }
+    .front-page .icons-banner .icon-me-bone {
+      -ms-flex-item-align: center;
+          align-self: center; }
+    .front-page .icons-banner .icon-me-hand {
+      -ms-flex-item-align: end;
+          align-self: flex-end; }
+
+header {
+  background: black;
+  position: fixed;
+  width: 89.3%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content; }
+
+.front-page-nav-bar {
   width: 100%;
-  background: lightgray;
-  display: grid;
-  grid-template-columns: 2fr 2fr 4fr 2fr 2fr;
-  grid-template-rows: 3fr 2fr 2fr;
-  grid-gap: 0.5rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative; }
-  .grid-container .grid-item {
-    background: black;
-    height: 100%;
-    width: 100%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    display: inline;
-    color: #c5aa65; }
-    .grid-container .grid-item h1, .grid-container .grid-item h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .front-page-nav-bar .nav-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 3em; }
+    .front-page-nav-bar .nav-logo img {
+      width: 5vw; }
+    .front-page-nav-bar .nav-logo .alex-name h1 {
+      font-size: 2em;
+      color: #c5aa65;
       position: relative;
       top: 50%;
       -webkit-transform: translateY(-50%);
-              transform: translateY(-50%); }
-    .grid-container .grid-item:hover {
-      -webkit-transform: scale(0.95);
-              transform: scale(0.95); }
-  .grid-container .front-logo {
-    -ms-flex-item-align: center;
-        align-self: center;
-    grid-column: 3 / 4;
-    grid-row: 1 / 2; }
-    .grid-container .front-logo:hover {
-      -webkit-transform: scale(1);
-              transform: scale(1); }
-    .grid-container .front-logo img {
-      width: 100%;
-      height: 100%;
-      -o-object-fit: contain;
-         object-fit: contain;
-      overflow: hidden; }
-  .grid-container .front-alex-image {
-    text-align: center;
-    grid-column: 3 / 4;
-    grid-row: 4 / 2; }
-    .grid-container .front-alex-image:hover {
-      -webkit-transform: scale(1);
-              transform: scale(1); }
-    .grid-container .front-alex-image img {
-      width: 100%;
-      height: 100%;
-      -o-object-fit: cover;
-         object-fit: cover;
-      overflow: hidden; }
-  .grid-container .front-professional {
-    grid-column: 1 / 3;
-    grid-row: 1 / 2; }
-  .grid-container .front-professional-skills {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3; }
-  .grid-container .front-professional-projects {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3; }
-  .grid-container .front-professional-experience {
-    grid-column: 1 / 2;
-    grid-row: 3 / 4; }
-  .grid-container .front-professional-education {
-    grid-column: 2 / 3;
-    grid-row: 3 / 4; }
-  .grid-container .front-personal {
-    grid-column: 4 / 6;
-    grid-row: 1 / 2; }
+              transform: translateY(-50%);
+      padding-left: 1em; }
+  .front-page-nav-bar .nav-links {
+    width: 60vw; }
+    .front-page-nav-bar .nav-links ul {
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+      .front-page-nav-bar .nav-links ul li {
+        font-size: 2em;
+        color: #c5aa65; }
 
 *,
 *::after,

@@ -1,0 +1,50 @@
+header {
+    background: black;
+    position: fixed;
+    width: 89.3%;
+    height: fit-content;
+}
+
+.front-page-nav-bar {
+    width: 100%;
+    // height: fit-content;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+
+    .nav-logo {
+        display: flex;
+        padding-left: 3em;
+
+        img {
+            width: 5vw;
+        }
+
+        .alex-name {
+
+            h1 {
+                font-size: 2em;
+                color: $gold-color;
+                @include vertical-align;
+                padding-left: 1em;
+            }
+        }
+    }
+
+    .nav-links {
+        width: 60vw;
+
+        ul {
+            @include vertical-align;
+            display: flex;
+            justify-content: space-around;
+
+            li {
+                font-size: 2em;
+                color: $gold-color;
+            }
+        }
+    }
+
+
+}
