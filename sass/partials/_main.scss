@@ -12,22 +12,28 @@
 html {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     max-width: $body_max_width;
     margin: 0 auto;
-    // overflow: hidden;
-    position:relative;
+    position: relative;
 }
-h1{
+
+h1 {
     font-size: $h1-font-size;
 }
-h2,{
+
+h2,
+    {
     font-size: $h2-font-size;
 }
-h3, h4{
+
+h3,
+h4 {
     font-size: $h3-h4-font-size;
 }
-a{
+
+a {
     text-decoration: none;
     color: inherit;
 }
@@ -37,6 +43,16 @@ a{
     margin: 0 auto;
 
     hr {
-      border-top: 2px solid black;
+        border-top: 2px solid black;
     }
-  }
+}
+
+.main-container {
+    margin-top: 90px;
+}
+
+.professional-page-h1,
+.personal-page-h1 {
+    text-align: center;
+    padding: 90px 0;
+}

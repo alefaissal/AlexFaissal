@@ -149,19 +149,14 @@ table {
     color: white;
     font-size: 1.5em; }
 
-.professional-page-h1, .personal-page-h1 {
-  text-align: center;
-  padding: 30px 0; }
-
 header {
   background: black;
   position: fixed;
   max-width: 1500px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 90px;
   width: 100%;
-  z-index: 9999; }
+  z-index: 9999;
+  top: 0; }
 
 .front-page-nav-bar {
   width: 100%;
@@ -406,7 +401,8 @@ h1 {
 h2 {
   font-size: 3em; }
 
-h3, h4 {
+h3,
+h4 {
   font-size: 1.2em; }
 
 a {
@@ -418,3 +414,11 @@ a {
   margin: 0 auto; }
   .hr-line hr {
     border-top: 2px solid black; }
+
+.main-container {
+  margin-top: 90px; }
+
+.professional-page-h1,
+.personal-page-h1 {
+  text-align: center;
+  padding: 90px 0; }
