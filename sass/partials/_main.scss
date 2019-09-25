@@ -15,7 +15,7 @@ html {
 body{
     max-width: $body_max_width;
     margin: 0 auto;
-    overflow: hidden;
+    // overflow: hidden;
     position:relative;
 }
 h1{
@@ -28,3 +28,12 @@ a{
     text-decoration: none;
     color: inherit;
 }
+
+.hr-line {
+    width: 80%;
+    margin: 0 auto;
+
+    hr {
+      border-top: 2px solid black;
+    }
+  }

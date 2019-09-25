@@ -8,9 +8,15 @@
     <meta name="author" content="Alex Faissal">
     <meta name="description" content="Personal resume website">
     <title>Alex Faissal Website</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <link rel="stylesheet" href="./build/css/style.min.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+
 </head>
 
 <body>
@@ -25,68 +31,226 @@
                     </div> -->
                 </div>
                 <div class="icons-banner">
-                        <div class="nav-icon icon-me-thinking">
-                            <img src="./images/IconMeThink.png" alt="">
-                            <h2>What I bring</h2>
-                        </div>
-                        <div class='nav-icon icon-me-bone'>
-                            <img src="./images/iconMeBone.jpeg" alt="">
-                            <h2>When not working...</h2>
-                        </div>
-                        <div class="nav-icon icon-me-hand">
-                            <img src="./images/iconMeHand.jpeg" alt="">
-                            <h2>Contact me!</h2>
-                        </div>
+                    <div class="nav-icon icon-me-thinking">
+                        <img src="./images/IconMeThink.png" alt="">
+                        <h2>What I bring</h2>
                     </div>
-                <!-- <div class="nav-links">
-                    <ul>
-                        <li>
-                            <a href="">Professional</a>
-                        </li>
-                        <li>
-                            <a href="">About</a>
-                        </li>
-                        <li>
-                            <a href="">Contact</a>
-                        </li>
-                    </ul>
-                </div> -->
+                    <div class='nav-icon icon-me-bone'>
+                        <img src="./images/iconMeBone.jpeg" alt="">
+                        <h2>When not working...</h2>
+                    </div>
+                    <div class="nav-icon icon-me-hand">
+                        <img src="./images/iconMeHand.jpeg" alt="">
+                        <h2>Contact me!</h2>
+                    </div>
+                </div>
             </div>
         </header>
         <div class="front-page">
-            <!-- <div class="icons-banner">
-                <div class="icon-me-thinking">
-                    <img src="./images/IconMeThink.png" alt="">
-                    <h2>Get the job done!</h2>
-                </div>
-                <div class='icon-me-bone'>
-                    <img src="./images/iconMeBone.jpeg" alt="">
-                    <h2>When not working...</h2>
-                </div>
-                <div class="icon-me-hand">
-                    <img src="./images/iconMeHand.jpeg" alt="">
-                    <h2>Call me!</h2>
-                </div>
-            </div> -->
+            <!-- TODO, see if there is anything else coming here -->
         </div>
         <!-- front-page -->
 
-        <div class="not-front-page">
-            <div class="professional-page">
+
+        <div class="professional-page">
+            <div class="skills">
+                <div class="skills-tech">
+                    <h2 class="my-skills">Technical Skills</h2>
+                    <div class="bar-1">
+                        <div class="title">HTML5/CSS3/SASS</div>
+                        <div class="bar" data-width="75%">
+                            <div class="bar-inner">
+
+                            </div>
+                            <div class="bar-percent">75%</div>
+                        </div>
+                    </div>
+                    <div class="bar-1">
+                        <div class="title" style="color: #084c61;">Javascript/Jquery/PHP/Wordpress</div>
+                        <div class="bar" data-width="65%">
+                            <div class="bar-inner" style="background: #084c61;">
+
+                            </div>
+                            <div class="bar-percent">65%</div>
+                        </div>
+
+                    </div>
+                    <div class="bar-1">
+                        <div class="title" style="color: #525252;">Gulp/Git/Github</div>
+                        <div class="bar" data-width="70%">
+                            <div class="bar-inner" style="background: #525252;">
+
+                            </div>
+                            <div class="bar-percent">70%</div>
+                        </div>
+                    </div>
+                    <div class="bar-1">
+                        <div class="title" style="color: #525252;">JAVA/Swift/MAMP</div>
+                        <div class="bar" data-width="45%">
+                            <div class="bar-inner" style="background: #525252;">
+
+                            </div>
+                            <div class="bar-percent">45%</div>
+                        </div>
+                    </div>
+                    <div class="bar-1">
+                        <div class="title" style="color: #5a68a5">JSON/REST API/AJAX</div>
+                        <div class="bar" data-width="60%">
+                            <div class="bar-inner" style="background: #5a68a5;">
+
+                            </div>
+                            <div class="bar-percent">60%</div>
+                        </div>
+                    </div>
+                </div><!-- skills-tech -->
+                <div class="skills-soft">
+                    <h2 class="my-skills">Soft Skills</h2>
+                    <div class="bar-1">
+                        <div class="title">Teamwork</div>
+                        <div class="bar" data-width="90%">
+                            <div class="bar-inner">
+
+                            </div>
+                            <div class="bar-percent">90%</div>
+                        </div>
+                    </div>
+                    <div class="bar-1">
+                        <div class="title" style="color: #084c61;">Leadership</div>
+                        <div class="bar" data-width="85%">
+                            <div class="bar-inner" style="background: #084c61;">
+
+                            </div>
+                            <div class="bar-percent">85%</div>
+                        </div>
+
+                    </div>
+                    <div class="bar-1">
+                        <div class="title" style="color: #525252;">Negotiation</div>
+                        <div class="bar" data-width="85%">
+                            <div class="bar-inner" style="background: #525252;">
+
+                            </div>
+                            <div class="bar-percent">85%</div>
+                        </div>
+                    </div>
+                    <div class="bar-1">
+                        <div class="title" style="color: #525252;">Sales/Marketing</div>
+                        <div class="bar" data-width="65%">
+                            <div class="bar-inner" style="background: #525252;">
+
+                            </div>
+                            <div class="bar-percent">65%</div>
+                        </div>
+                    </div>
+                </div><!-- skills-soft -->
+            </div><!--skills-->
+            <div class="hr-line">
+                <hr>
+            </div>
+            <div class="projects">
+                <h2 class="my-projects">Projects</h2>
+
+                <div class="main-carousel" data-flickity='{ 
+                    "cellAlign": "center",
+                     "contain": true,
+                     "wrapAround": true
+                     }'>
+                    <div class="carousel-cell">
+                        <div class="project-cell">
+                            <img class="project-image" src="images/screenShotAloha.png" alt="Aloha website">
+                            <p class="project-title">Aloha</p>
+                            <p class="project-url"><a id="product1-cart" target="_blank"
+                                    href="https://alefaissal.github.io/Aloha/">Check the website</a></p>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="project-cell">
+                            <img class="project-image" src="images/screenShotAmp.png" alt="The Amp website">
+                            <p class="project-title">The Amp</p>
+                            <p class="project-url"><a id="product1-cart" target="_blank"
+                                    href="https://amp.van.cp.academy.red/">Check the website</a></p>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="project-cell">
+                            <img class="project-image" src="images/screenShotInhabitent.png" alt="Inhabitent website">
+                            <p class="project-title">Inhabitent</p>
+                            <p class="project-url"><a id="product1-cart" target="_blank"
+                                    href="https://alexfaissal.cloudaccess.host/">Check the website</a></p>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="project-cell">
+                            <img class="project-image" src="images/screenShotInstanews.png" alt="Instanews website">
+                            <p class="project-title">Instanews</p>
+                            <p class="project-url"><a id="product1-cart" target="_blank"
+                                    href="https://alefaissal.github.io/Instanews/">Check the website</a></p>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="project-cell">
+                            <img class="project-image" src="images/screenShotPong.png" alt="Pong Game">
+                            <p class="project-title">Galaxy Pong</p>
+                            <p class="project-url"><a id="product1-cart" target="_blank"
+                                    href="https://alefaissal.github.io/Galaxy-Pong/">Check this game</a></p>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="project-cell">
+                            <img class="project-image" src="images/screenShotQuotes.png" alt="Quotes on dev">
+                            <p class="project-title">Quotes on Dev</p>
+                            <p class="project-url"><a id="product1-cart" target="_blank"
+                                    href="https://github.com/alefaissal/quotesondev">Check my code</a></p>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="project-cell">
+                            <img class="project-image" src="images/screenShotSkunk.png" alt="Skunk Game">
+                            <p class="project-title">Iphone Skunk Game</p>
+                            <p class="project-url"><a id="product1-cart" target="_blank"
+                                    href="https://github.com/alefaissal/Skunk-game-iphone">Check my code</a></p>
+                        </div>
+                    </div>
+
+                </div>
 
 
-            </div><!-- professional-page -->
-
-            <div class="personal-page">
 
 
-            </div><!-- personal-page -->
-
-            <div class="contact-me">
 
 
-            </div><!-- contact-me -->
-        </div><!-- not-front-page -->
+
+
+
+
+
+
+
+
+            </div>
+            <div class="background">
+                <div class="background-experience">
+                    back here
+                </div>
+                <div class="background-education">
+                    education header
+                    <h1>teste</h1>
+                </div>
+
+            </div>
+
+        </div><!-- professional-page -->
+
+        <div class="personal-page">
+
+
+        </div><!-- personal-page -->
+
+        <div class="contact-me">
+
+
+        </div><!-- contact-me -->
+
 
 
 
@@ -109,6 +273,7 @@
 
 
     </div><!-- mobile-version -->
+
 
 
 

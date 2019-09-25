@@ -135,7 +135,8 @@ header {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  width: 100%; }
+  width: 100%;
+  z-index: 9999; }
 
 .front-page-nav-bar {
   width: 100%;
@@ -150,7 +151,7 @@ header {
   .front-page-nav-bar .nav-logo {
     padding-left: 3em; }
     .front-page-nav-bar .nav-logo img {
-      width: 10vw; }
+      width: 5vw; }
     .front-page-nav-bar .nav-logo .alex-name {
       width: 15vw; }
       .front-page-nav-bar .nav-logo .alex-name h1 {
@@ -162,19 +163,6 @@ header {
         -webkit-transform: translateY(-100%);
                 transform: translateY(-100%);
         text-align: left; }
-  .front-page-nav-bar .nav-links ul {
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
-    .front-page-nav-bar .nav-links ul li {
-      font-size: 2em;
-      color: #c5aa65; }
   .front-page-nav-bar .icons-banner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -182,14 +170,14 @@ header {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     width: 100%;
-    padding: 0  40px; }
+    padding: 0  150px; }
     .front-page-nav-bar .icons-banner img {
-      height: 15vh; }
+      height: 7vh; }
     .front-page-nav-bar .icons-banner h2 {
       color: #c5aa65;
       text-align: left;
       width: 100%;
-      font-size: 30px; }
+      font-size: 25px; }
     .front-page-nav-bar .icons-banner .nav-icon {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -197,6 +185,99 @@ header {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
+
+.skills {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: lightgrey; }
+
+.skills-tech, .skills-soft {
+  margin: 40px 10px;
+  width: 50%; }
+
+h2 {
+  color: black;
+  text-align: center; }
+
+.title {
+  font-weight: bold;
+  font-size: 20px;
+  color: #db3a34; }
+
+.bar {
+  width: 90%;
+  height: 35px;
+  background: #fff;
+  border-radius: 5px;
+  position: relative;
+  -webkit-transition: all 2s linear;
+  transition: all 2s linear; }
+
+.bar-1,
+.my-skills {
+  width: 80%;
+  margin: 10px auto 25px; }
+
+.bar-inner {
+  width: 0;
+  height: 35px;
+  line-height: 35px;
+  background: #db3a34;
+  border-radius: 5px 0 0 5px; }
+
+.bar-percent {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 18px;
+  font-weight: bold; }
+
+.projects {
+  width: 100%;
+  background: lightgrey; }
+  .projects .my-projects {
+    text-align: center;
+    padding: 20px 0; }
+  .projects .main-carousel {
+    width: 60%;
+    margin: 0 auto; }
+    .projects .main-carousel:focus {
+      border: none; }
+  .projects .carousel-cell {
+    width: 33.333%;
+    text-align: center;
+    margin-bottom: 150px; }
+  .projects .is-selected {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); }
+  .projects .flickity-viewport {
+    padding: 50px 0; }
+  .projects .flickity-prev-next-button {
+    background: grey; }
+    .projects .flickity-prev-next-button.next {
+      right: -40px; }
+    .projects .flickity-prev-next-button.previous {
+      left: -40px; }
+  .projects .project-cell {
+    text-align: center; }
+  .projects .project-image {
+    max-width: 15em; }
+  .projects .project-title {
+    font-size: 1.3em;
+    text-transform: capitalize;
+    padding: 10px 0; }
+  .projects .project-url {
+    font-family: 'Playfair Display';
+    font-size: 1em;
+    font-style: normal;
+    color: black;
+    text-decoration: underline; }
+    .projects .project-url:hover {
+      color: blue; }
 
 *,
 *::after,
@@ -214,7 +295,6 @@ html {
 body {
   max-width: 1500px;
   margin: 0 auto;
-  overflow: hidden;
   position: relative; }
 
 h1 {
@@ -226,3 +306,9 @@ h2 {
 a {
   text-decoration: none;
   color: inherit; }
+
+.hr-line {
+  width: 80%;
+  margin: 0 auto; }
+  .hr-line hr {
+    border-top: 2px solid black; }

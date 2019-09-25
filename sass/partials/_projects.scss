@@ -1,0 +1,61 @@
+.projects{
+    width: 100%;
+    background: lightgrey;
+    .my-projects{
+        text-align: center;
+        padding: 20px 0;
+    }
+    .main-carousel{
+        width: 60%;
+        margin: 0 auto;
+        &:focus{
+            border: none;
+        }
+    }
+    .carousel-cell {
+        width: 33.333%;
+        text-align: center;
+        margin-bottom: 150px;
+    }
+    .is-selected{
+        transform: scale(1.2);
+    }
+    .flickity-viewport{
+        padding: 50px 0;
+    }
+    .flickity-prev-next-button{
+        background: grey;
+        &.next {
+            right: -40px;
+        }
+        &.previous {
+            left: -40px;
+        }
+    }
+    
+    
+    .project-cell {
+        text-align: center;
+    
+    }
+    .project-image{
+        max-width: 15em;
+    }
+    
+    .project-title {
+        font-size: 1.3em;
+        text-transform: capitalize;
+        padding: 10px 0;
+        }
+    
+    .project-url {
+        font-family: 'Playfair Display';
+        font-size: 1em;
+        font-style: normal;
+        color: black;
+        text-decoration: underline;
+        &:hover{
+            color: blue;
+        }
+    }
+}
