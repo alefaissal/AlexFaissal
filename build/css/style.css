@@ -317,6 +317,8 @@ h2 {
     .background .background-education .experience-cell {
       width: 80%;
       margin: 0 auto; }
+  .background .background-experience {
+    width: 50%; }
 
 .experience-cell {
   padding-top: 30px; }
@@ -333,7 +335,7 @@ h2 {
     text-align: right; }
 
 .experience-description {
-  width: 60%; }
+  width: 70%; }
 
 .personal-page {
   background: lightgrey; }
