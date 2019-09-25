@@ -126,7 +126,32 @@ table {
   height: 100vh;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../images/heroBanner.jpg) no-repeat center;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(../../images/heroBanner.jpg) no-repeat center;
-  background-size: cover, cover; }
+  background-size: cover, cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+
+.banner-text {
+  padding: 60px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+  background-size: cover;
+  width: 50%; }
+  .banner-text .banner-text-h2 {
+    text-align: left;
+    color: white;
+    margin-bottom: 20px; }
+  .banner-text .banner-text-p {
+    text-align: justify;
+    color: white;
+    font-size: 1.5em; }
+
+.professional-page-h1, .personal-page-h1 {
+  text-align: center;
+  padding: 30px 0; }
 
 header {
   background: black;
@@ -262,6 +287,8 @@ h2 {
       right: -40px; }
     .projects .flickity-prev-next-button.previous {
       left: -40px; }
+  .projects .flickity-page-dots {
+    bottom: 10px; }
   .projects .project-cell {
     text-align: center; }
   .projects .project-image {
@@ -278,6 +305,82 @@ h2 {
     text-decoration: underline; }
     .projects .project-url:hover {
       color: blue; }
+
+.background {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 40px 0;
+  line-height: 30px;
+  background: lightgrey; }
+  .background .background-cell {
+    padding: 20px 40px; }
+  .background li {
+    list-style-type: square; }
+  .background .background-education {
+    width: 50%; }
+    .background .background-education .experience-cell {
+      width: 80%;
+      margin: 0 auto; }
+
+.experience-cell {
+  padding-top: 30px; }
+
+.experience-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .experience-flex h3, .experience-flex h4 {
+    width: 50%; }
+  .experience-flex .experience-position {
+    font-weight: bold; }
+  .experience-flex h3 {
+    text-align: right; }
+
+.experience-description {
+  width: 60%; }
+
+.personal-page {
+  background: lightgrey; }
+  .personal-page .volunteer {
+    text-align: right;
+    padding-right: 100px; }
+    .personal-page .volunteer h2 {
+      text-align: right;
+      padding: 20px 0; }
+    .personal-page .volunteer img {
+      width: 15vw; }
+    .personal-page .volunteer a {
+      color: red; }
+      .personal-page .volunteer a:hover {
+        text-decoration: underline; }
+  .personal-page .passions {
+    padding-left: 100px; }
+    .personal-page .passions h2 {
+      width: 30%;
+      text-align: center;
+      padding: 20px 0; }
+    .personal-page .passions img {
+      width: 15vw; }
+    .personal-page .passions .passions-icons {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      width: 30%; }
+      .personal-page .passions .passions-icons i {
+        font-size: 5em;
+        padding: 10px 20px; }
+  .personal-page .more-about-me {
+    text-align: right;
+    padding-right: 100px; }
+    .personal-page .more-about-me h2 {
+      text-align: right; }
 
 *,
 *::after,
@@ -302,6 +405,9 @@ h1 {
 
 h2 {
   font-size: 3em; }
+
+h3, h4 {
+  font-size: 1.2em; }
 
 a {
   text-decoration: none;

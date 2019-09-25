@@ -1,0 +1,41 @@
+.background{
+    display: flex;
+    padding: 40px 0;
+    line-height: 30px;
+    background: lightgrey;
+
+    .background-cell{
+        padding: 20px 40px;
+    }
+    li{
+        list-style-type: square;
+    }
+    .background-education{
+        width: 50%;
+        .experience-cell{
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+}
+.experience-cell{
+    padding-top: 30px;
+}
+.experience-flex{
+    display: flex;
+
+    h3, h4{
+        width: 50%;
+    }
+    .experience-position{
+        font-weight: bold;
+    }
+    h3{
+        text-align: right;
+    }
+    }// .experience-flex
+    .experience-description{
+        width: 60%;
+
+
+    }

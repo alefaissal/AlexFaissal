@@ -1,0 +1,64 @@
+.personal-page {
+    background: lightgrey;
+
+    .volunteer {
+        text-align: right;
+        padding-right: 100px;
+
+        h2 {
+            text-align: right;
+            padding: 20px 0;
+        }
+
+        img {
+            width: 15vw;
+        }
+
+        a {
+            color: red;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }//.volunteer
+
+    .passions {
+        padding-left: 100px;
+
+        h2 {
+            width: 30%;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        img {
+            width: 15vw;
+        }
+
+        .passions-icons {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            width: 30%;
+
+            i {
+                font-size: 5em;
+                padding: 10px 20px;
+            }
+        }
+    }//.passions
+
+    .more-about-me{
+        text-align: right;
+        padding-right: 100px;
+        h2{
+            text-align: right;
+        }
+    }
+
+
+
+}
+
+// .personal-page
