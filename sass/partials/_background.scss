@@ -3,6 +3,9 @@
     padding: 40px 0;
     line-height: 30px;
     background: lightgrey;
+    @include mobile{
+        flex-wrap: wrap;
+    }
 
     .background-cell{
         padding: 20px 40px;
@@ -12,13 +15,25 @@
     }
     .background-education{
         width: 50%;
+        @include mobile{
+            width: 100%;
+        }
         .experience-cell{
             width: 80%;
             margin: 0 auto;
+            @include mobile{
+                padding-left: 0;
+                padding-right: 0;
+                width: 100%;
+                margin: 0;
+            }
         }
     }
     .background-experience{
         width: 50%;
+        @include mobile{
+            width: 100%;
+        }
     }
 }
 .experience-cell{

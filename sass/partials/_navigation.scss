@@ -18,10 +18,16 @@ header {
     .nav-logo {
         // display: flex;
         padding-left: 3em;
-
+        @include mobile{
+            padding-left: 1em;
+            // margin: 0 auto;
+        }
         img {
             width: 5vw;
-            // height:15vh;
+            @include mobile{
+                width: 20vw;
+                
+            }
         }
 
         .alex-name {
@@ -30,7 +36,6 @@ header {
             h1 {
                 font-size: 2em;
                 color: $gold-color;
-                // @include vertical-align;
                 padding-left: 1em;
                 position: relative;
                 top: 100%;
@@ -47,10 +52,16 @@ header {
         justify-content: space-around;
         width: 100%;
         padding:0  150px;
+        @include mobile{
+            justify-content: space-between;
+            padding: 0 85px;
+            padding-right: 20px;
+        }
 
         img {
             height: 7vh;
             // border-radius: 50%;
+            
         }
 
         h2 {
@@ -58,6 +69,9 @@ header {
             text-align: left;
             width: 100%;
             font-size: 25px;
+            @include mobile{
+                display: none;
+            }
 
         }
 

@@ -1,17 +1,22 @@
 .skills{
     height: fit-content;
     display: flex;
-    background: lightgrey;
-    
+    background: $background_lightgray;
+    @include mobile{
+        display: initial;
+    }
 }
 .my-skills-title{
-    background: lightgrey;
+    background: $background_lightgray;
     width: 100%;
     margin: 0;
 }
 .skills-tech, .skills-soft {
     margin: 40px 10px;;
     width: 50%;
+    @include mobile{
+        width: 100%;
+    }
 
 }
 
@@ -33,6 +38,7 @@ h2 {
     border-radius: 5px;
     position: relative;
     transition: all 2s linear;
+    
 }
 
 .bar-1,

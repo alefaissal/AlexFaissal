@@ -17,20 +17,30 @@ body {
     max-width: $body_max_width;
     margin: 0 auto;
     position: relative;
+    background:$body_background_color;
+    background-size: contain;
 }
 
 h1 {
     font-size: $h1-font-size;
+    @include mobile{
+        font-size: $h1-font-size-mobile;
+    }
 }
 
-h2,
-    {
+h2{
     font-size: $h2-font-size;
+    @include mobile{
+        font-size: $h2-font-size-mobile;
+    }
 }
 
 h3,
 h4 {
     font-size: $h3-h4-font-size;
+    @include mobile{
+        font-size: $h3-h4-font-size-mobile;
+    }
 }
 
 a {
@@ -54,12 +64,12 @@ a {
     // background: rgb(182, 180, 180);
 }
 .professional-page-h1{
-    background:lightgrey;
+    background:$header-color;
 }
 
 .personal-page-h1{
-
+    background: $header-color;
 }
 .contact-page-h1{
-    background: lightgrey;
+    background: $header-color;
 }

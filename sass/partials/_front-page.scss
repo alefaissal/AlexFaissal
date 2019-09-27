@@ -13,17 +13,28 @@
     background:linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
     background-size: cover;
     width:50%;
+    @include mobile{
+        width:100%;
+        padding: 10px;
+    }
+
     .banner-text-h2{
         text-align: left;
         color: white;
         margin-bottom: 20px;
+        @include mobile{
+            text-align: center;
+        }
+        
     }
     .banner-text-p{
         text-align: justify;
         color: white;
         // width:30%;
         font-size: 1.5em;
-
+        @include mobile{
+            text-align: center;
+        }
     }
 
 }
