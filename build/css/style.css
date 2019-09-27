@@ -401,13 +401,30 @@ h2 {
   display: flex; }
   .experience-flex h3, .experience-flex h4 {
     width: 50%; }
+  @media (max-width: 760px) {
+    .experience-flex h4 {
+      width: 55%; } }
   .experience-flex .experience-position {
     font-weight: bold; }
   .experience-flex h3 {
     text-align: right; }
+    @media (max-width: 760px) {
+      .experience-flex h3 {
+        width: 45%; } }
 
 .experience-description {
   width: 70%; }
+  @media (max-width: 760px) {
+    .experience-description {
+      width: 100%; } }
+
+@media (max-width: 760px) {
+  .experience-company {
+    width: 60%; } }
+
+@media (max-width: 760px) {
+  .experience-location {
+    width: 40%; } }
 
 .personal-page .volunteer {
   text-align: right;
@@ -415,10 +432,14 @@ h2 {
   @media (max-width: 760px) {
     .personal-page .volunteer {
       padding: 20px 0;
-      padding-right: 10px; } }
+      padding-right: 10px;
+      text-align: center; } }
   .personal-page .volunteer h2 {
     text-align: right;
     padding: 20px 0; }
+    @media (max-width: 760px) {
+      .personal-page .volunteer h2 {
+        text-align: center; } }
   .personal-page .volunteer img {
     max-width: 15vw; }
   .personal-page .volunteer a {
@@ -438,7 +459,6 @@ h2 {
     @media (max-width: 760px) {
       .personal-page .passions h2 {
         width: 100%;
-        text-align: left;
         padding: 30px 0; } }
   .personal-page .passions img {
     width: 1vw; }
@@ -455,8 +475,8 @@ h2 {
     width: 30%; }
     @media (max-width: 760px) {
       .personal-page .passions .passions-icons {
-        width: 80%;
-        padding-left: 0; } }
+        width: 100%;
+        padding: 0 20px; } }
     .personal-page .passions .passions-icons i {
       font-size: 3.2em;
       padding: 10px 25px; }
