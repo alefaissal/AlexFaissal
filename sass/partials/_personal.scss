@@ -1,5 +1,5 @@
 .personal-page {
-    background: lightgrey;
+    // background: lightgrey;
 
     .volunteer {
         text-align: right;
@@ -11,7 +11,7 @@
         }
 
         img {
-            width: 15vw;
+            max-width: 15vw;
         }
 
         a {
@@ -33,7 +33,7 @@
         }
 
         img {
-            width: 15vw;
+            width: 1vw;
         }
 
         .passions-icons {
@@ -43,8 +43,8 @@
             width: 30%;
 
             i {
-                font-size: 5em;
-                padding: 10px 20px;
+                font-size: 4em;
+                padding: 10px 25px;
             }
         }
     }//.passions

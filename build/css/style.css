@@ -215,6 +215,11 @@ header {
   display: flex;
   background: lightgrey; }
 
+.my-skills-title {
+  background: lightgrey;
+  width: 100%;
+  margin: 0; }
+
 .skills-tech, .skills-soft {
   margin: 40px 10px;
   width: 50%; }
@@ -257,8 +262,7 @@ h2 {
   font-weight: bold; }
 
 .projects {
-  width: 100%;
-  background: lightgrey; }
+  width: 100%; }
   .projects .my-projects {
     text-align: center;
     padding: 20px 0; }
@@ -337,46 +341,77 @@ h2 {
 .experience-description {
   width: 70%; }
 
-.personal-page {
+.personal-page .volunteer {
+  text-align: right;
+  padding-right: 100px; }
+  .personal-page .volunteer h2 {
+    text-align: right;
+    padding: 20px 0; }
+  .personal-page .volunteer img {
+    max-width: 15vw; }
+  .personal-page .volunteer a {
+    color: red; }
+    .personal-page .volunteer a:hover {
+      text-decoration: underline; }
+
+.personal-page .passions {
+  padding-left: 100px; }
+  .personal-page .passions h2 {
+    width: 30%;
+    text-align: center;
+    padding: 20px 0; }
+  .personal-page .passions img {
+    width: 1vw; }
+  .personal-page .passions .passions-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 30%; }
+    .personal-page .passions .passions-icons i {
+      font-size: 4em;
+      padding: 10px 25px; }
+
+.personal-page .more-about-me {
+  text-align: right;
+  padding-right: 100px; }
+  .personal-page .more-about-me h2 {
+    text-align: right; }
+
+.contact-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 100%;
+  padding: 20px 10px;
+  padding-bottom: 100px;
   background: lightgrey; }
-  .personal-page .volunteer {
-    text-align: right;
-    padding-right: 100px; }
-    .personal-page .volunteer h2 {
-      text-align: right;
-      padding: 20px 0; }
-    .personal-page .volunteer img {
-      width: 15vw; }
-    .personal-page .volunteer a {
-      color: red; }
-      .personal-page .volunteer a:hover {
-        text-decoration: underline; }
-  .personal-page .passions {
-    padding-left: 100px; }
-    .personal-page .passions h2 {
-      width: 30%;
-      text-align: center;
-      padding: 20px 0; }
-    .personal-page .passions img {
-      width: 15vw; }
-    .personal-page .passions .passions-icons {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-flow: row wrap;
-              flex-flow: row wrap;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-      width: 30%; }
-      .personal-page .passions .passions-icons i {
-        font-size: 5em;
-        padding: 10px 20px; }
-  .personal-page .more-about-me {
-    text-align: right;
-    padding-right: 100px; }
-    .personal-page .more-about-me h2 {
+  .contact-me a {
+    padding: 0 20px;
+    font-weight: 400; }
+    .contact-me a:hover {
+      color: blue; }
+    .contact-me a:focus {
+      border: none; }
+  .contact-me h1 {
+    width: 50%;
+    padding: 10px 0; }
+    .contact-me h1.resume {
+      width: 100%;
+      text-align: center; }
+      .contact-me h1.resume a {
+        padding-right: 0;
+        padding-left: 20px; }
+    .contact-me h1.mobile, .contact-me h1.linkedin {
       text-align: right; }
 
 *,
@@ -405,7 +440,7 @@ h2 {
 
 h3,
 h4 {
-  font-size: 1.2em; }
+  font-size: 1.3em; }
 
 a {
   text-decoration: none;
@@ -421,5 +456,10 @@ a {
 .personal-page-h1,
 .contact-page-h1 {
   text-align: center;
-  padding: 90px 0;
-  background: #b6b4b4; }
+  padding: 90px 0; }
+
+.professional-page-h1 {
+  background: lightgrey; }
+
+.contact-page-h1 {
+  background: lightgrey; }

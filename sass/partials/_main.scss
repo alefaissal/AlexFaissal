@@ -46,12 +46,20 @@ a {
         border-top: 2px solid black;
     }
 }
-
-
 .professional-page-h1,
 .personal-page-h1,
 .contact-page-h1 {
     text-align: center;
     padding: 90px 0;
-    background: rgb(182, 180, 180);
+    // background: rgb(182, 180, 180);
+}
+.professional-page-h1{
+    background:lightgrey;
+}
+
+.personal-page-h1{
+
+}
+.contact-page-h1{
+    background: lightgrey;
 }
