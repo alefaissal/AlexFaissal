@@ -1,8 +1,5 @@
 .projects{
     width: 100%;
-    // @include mobile{
-    //     min-height: 70vh; 
-    //  }
     .my-projects{
         text-align: center;
         padding: 20px 0;
@@ -18,23 +15,12 @@
         width: 33.333%;
         text-align: center;
         margin-bottom: 150px;
-        @include mobile{
-            width: 100%;
-            display: none;
-        }
     }
     .is-selected{
         transform: scale(1.2);
-        @include mobile{
-            transform: scale(1);
-            display: initial;
-        }
     }
     .flickity-viewport{
         padding: 50px 0;
-        @include mobile{
-           min-height: 60vh; 
-        }
         
     }
     // .flickity-slider {
@@ -47,15 +33,9 @@
         background: grey;
         &.next {
             right: -40px;
-            @include mobile{
-                right: -60px;   
-            }
         }
         &.previous {
             left: -40px;
-            @include mobile{
-                left: -60px;   
-            }
         }
     }
     .flickity-page-dots {
@@ -78,7 +58,6 @@
         }
     
     .project-url {
-        font-family: 'Playfair Display';
         font-size: 1em;
         font-style: normal;
         color: black;
@@ -88,3 +67,58 @@
         }
     }
 }
+.projects-mobile{
+//     .my-projects{
+//     }
+    .main-carousel-mobile{
+    padding: 15px 15px 0 15px;
+    margin-bottom: 70px;
+        &:focus{
+            border: none;
+        }
+    }
+    .carousel-cell {
+        width: 100%;
+    }
+    .is-selected{
+    }
+
+//     .flickity-viewport{
+        
+//     }
+    .flickity-button{
+        display: none;
+
+    }
+    .flickity-page-dots {
+        padding: 15px 0;  
+        margin-top: 30px;  
+        bottom: -60px;
+        width: 91%;
+
+    }
+
+    
+//     .project-cell {
+//         text-align: center;
+    
+//     }
+    .project-image{
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
+    .project-title {
+        font-size: 1.3em;
+        text-transform: capitalize;
+        padding: 10px 0;
+        text-align: center;
+        }
+    
+    .project-url {
+        text-align: center;
+        &:hover{
+            color: blue;
+        }
+    }
+}// projects-mobile

@@ -7,6 +7,11 @@
         flex-wrap: wrap;
     }
 
+    .not-mobile{
+        @include mobile{
+            display: none;
+        }
+    }
     .background-cell{
         padding: 20px 40px;
     }
@@ -17,6 +22,7 @@
         width: 50%;
         @include mobile{
             width: 100%;
+            padding: 20px 20px;
         }
         .experience-cell{
             width: 80%;
@@ -33,6 +39,7 @@
         width: 50%;
         @include mobile{
             width: 100%;
+            padding: 20px 20px 20px 30px;
         }
     }
 }

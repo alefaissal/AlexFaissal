@@ -73,3 +73,15 @@ a {
 .contact-page-h1{
     background: $header-color;
 }
+
+.projects-mobile{
+    display: none;
+    @include mobile{
+        display: initial;
+    }
+}
+.projects{
+    @include mobile{
+        display: none;
+    }
+}
