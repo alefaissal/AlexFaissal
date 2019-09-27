@@ -19,6 +19,7 @@ body {
     position: relative;
     background:$body_background_color;
     background-size: contain;
+    font-family: $main-font-family;
 }
 
 h1 {
@@ -69,6 +70,7 @@ a {
 
 .personal-page-h1{
     background: $header-color;
+
 }
 .contact-page-h1{
     background: $header-color;

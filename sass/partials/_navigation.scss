@@ -23,7 +23,7 @@ header {
             // margin: 0 auto;
         }
         img {
-            width: 5vw;
+            max-width: 4.5vw;
             @include mobile{
                 width: 20vw;
                 
