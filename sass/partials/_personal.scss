@@ -19,7 +19,11 @@
         }
 
         img {
-            max-width: 15vw;
+            width: 15vw;
+            @include mobile{
+                width: 55vw;
+                padding-bottom: 20px;
+            }
         }
 
         a {

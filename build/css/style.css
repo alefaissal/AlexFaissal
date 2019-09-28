@@ -281,6 +281,10 @@ h2 {
   width: 80%;
   margin: 10px auto 25px; }
 
+.bar-1 .title {
+  font-size: 15px;
+  padding-bottom: 5px; }
+
 .bar-inner {
   width: 0;
   height: 35px;
@@ -460,7 +464,11 @@ h2 {
       .personal-page .volunteer h2 {
         text-align: center; } }
   .personal-page .volunteer img {
-    max-width: 15vw; }
+    width: 15vw; }
+    @media (max-width: 760px) {
+      .personal-page .volunteer img {
+        width: 55vw;
+        padding-bottom: 20px; } }
   .personal-page .volunteer a {
     color: red; }
     .personal-page .volunteer a:hover {
