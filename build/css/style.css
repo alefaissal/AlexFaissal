@@ -184,7 +184,7 @@ header {
       .front-page-nav-bar .nav-logo {
         padding-left: 1em; } }
     .front-page-nav-bar .nav-logo img {
-      max-width: 4.5vw; }
+      width: 4.5vw; }
       @media (max-width: 760px) {
         .front-page-nav-bar .nav-logo img {
           width: 20vw; } }
