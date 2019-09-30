@@ -26,6 +26,13 @@
             font-size: 1.2em;
             padding: 10px 0;
         }
+        i, a{
+            font-size: 0.8em;
+            @include mobile{
+                font-size: 1em;
+            }
+        }
+        
         &.resume{
             width: 100%;
             text-align: center;
@@ -35,6 +42,7 @@
             a{
                 padding-right: 0;
                 padding-left: 20px;
+                
                 @include mobile{
             
                 }
@@ -42,6 +50,10 @@
         }
         &.mobile, &.linkedin{
             text-align: right;
+            font-size: 2.1em;
+            @include mobile{
+                font-size: 1.1em;
+            }
         }
     }
 }

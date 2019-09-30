@@ -62,7 +62,9 @@ a {
 .contact-page-h1 {
     text-align: center;
     padding: 90px 0;
-    // background: rgb(182, 180, 180);
+    @include mobile{
+      font-size: 2em ;
+    }
 }
 .professional-page-h1{
     background:$header-color;
